@@ -1,0 +1,11 @@
+mlflow
+scikit-learn
+pandas
+numpy
+fastapi
+uvicorn
+pydantic
+python-dotenv
+httpx
+pytest
+requests

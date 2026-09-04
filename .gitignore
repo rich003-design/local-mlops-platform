@@ -1,0 +1,26 @@
+# Environment
+.env
+
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# MLflow local storage
+mlruns/
+mlartifacts/
+artifacts/
+mlflow.db
+
+# Monitoring output
+monitoring/*.jsonl
+
+# Test cache
+.pytest_cache/
+.coverage
+
+# macOS
+.DS_Store

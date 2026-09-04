@@ -1,0 +1,53 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug Model Training",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "src.train",
+        "cwd": "${workspaceFolder}",
+        "envFile": "${workspaceFolder}/.env",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      },
+      {
+        "name": "Debug Model Validation",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "src.validate",
+        "cwd": "${workspaceFolder}",
+        "envFile": "${workspaceFolder}/.env",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      },
+      {
+        "name": "Debug Model Promotion",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "src.promote",
+        "cwd": "${workspaceFolder}",
+        "envFile": "${workspaceFolder}/.env",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      },
+      {
+        "name": "Debug Prediction API",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "uvicorn",
+        "args": [
+          "src.api:app",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8000"
+        ],
+        "cwd": "${workspaceFolder}",
+        "envFile": "${workspaceFolder}/.env",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      }
+    ]
+  }
+  
